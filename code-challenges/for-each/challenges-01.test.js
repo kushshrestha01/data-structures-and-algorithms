@@ -81,8 +81,6 @@ const removeWithForEach = (arr, callback) => {
   return arr;
 };
 
-
-//removeWithForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne)
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -101,8 +99,6 @@ const removeWithAnon = (arr) => {
   });
   return arr;
 };
-
-// removeWithAnon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -142,8 +138,6 @@ const createList = (availableItems) => {
   return arr;
 };
 
-// describe('Testing challenge 6', () => {
-//   const inventory = [{ name: 'apples', available: true }, { name: 'pears', available: true }, { name: 'oranges', available: false }, { name: 'bananas', available: true }, { name: 'blueberries', available: false }];
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
 
@@ -174,9 +168,6 @@ const fizzbuzz = (arr) => {
   return arr;
 };
 
-// test('It should print out messages or numbers', () => {
-//   expect(fizzbuzz(inputs)).toStrictEqual([1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'Fizz Buzz', 16]);
-//   expect(fizzbuzz(inputs).length).toStrictEqual(16);
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
