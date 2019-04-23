@@ -9,11 +9,11 @@ Then, write a function named speaker that takes in a string and a callback funct
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+  return word.toUpperCase();
 };
 
 const speaker = (message, callback) => {
-  // Solution code here...
+  return message.toUpperCase(callback);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,11 +33,14 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for(let i =0; i < times; i++){
+    callback(arr,num);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -53,11 +56,16 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const removeOne = (num, arr) => {
-  // Solution code here...
+  if(num % 3 === 2){
+    arr.pop();
+  }
 };
 
 const removeElements = (arr, callback) => {
-  // Solution code here...
+  for(let i = 0; i < arr.length; i++){
+    callback(arr[i],arr);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,9 +75,14 @@ Write a function named removeWithForEach that produces the same output as challe
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithForEach = (arr, callback) => {
-  // Solution code here...
+  arr.forEach((num) => {
+    callback(num,arr)
+  });
+  return arr;
 };
 
+
+//removeWithForEach([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], removeOne)
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
@@ -81,13 +94,27 @@ This anonymous function should accept up to three arguments: the element, the in
 ------------------------------------------------------------------------------------------------ */
 
 const removeWithAnon = (arr) => {
-  // Solution code here...
+  arr.forEach((num,i,arr) => {
+    if(num % 3 === 2){
+      arr.pop();
+    }
+  });
+  return arr;
 };
+
+// removeWithAnon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
 Write a function named createList that takes in an array of the current store intentory.
+
+stores = [Store object, alki, capHill]
+
+cappHill{
+  name: 
+  avail
+}
 
 The inventory is formatted like this:
 [
@@ -101,10 +128,22 @@ The inventory is formatted like this:
 This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
+// const createList = function (availableItem){}
 const createList = (availableItems) => {
-  // Solution code here...
+  var arr = [];
+  availableItems.forEach((element,i) => {
+    if(element.available === true){
+      console.log(element.available);
+      arr.push(availableItems[i].name)
+      console.log(arr[i]);
+    }
+  });
+  console.log(arr);
+  return arr;
 };
 
+// describe('Testing challenge 6', () => {
+//   const inventory = [{ name: 'apples', available: true }, { name: 'pears', available: true }, { name: 'oranges', available: false }, { name: 'bananas', available: true }, { name: 'blueberries', available: false }];
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7
 
