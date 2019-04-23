@@ -159,9 +159,24 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  // Solution code here...
+  arr.forEach((elements,i,arr) => {
+    if(elements % 3 === 0){
+      arr.push('Fizz')
+    }
+    else if(elements % 5 === 0){
+      arr.push('Buzz')
+    }
+    if(elements % 3 === 0 && elements % 5 === 0){
+      arr.push('Fizz Buzz')
+    }
+  });
+  console.log(arr);
+  return arr;
 };
 
+test('It should print out messages or numbers', () => {
+  expect(fizzbuzz(inputs)).toStrictEqual([1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'Fizz Buzz', 16]);
+  expect(fizzbuzz(inputs).length).toStrictEqual(16);
 /* ------------------------------------------------------------------------------------------------
 TESTS
 
