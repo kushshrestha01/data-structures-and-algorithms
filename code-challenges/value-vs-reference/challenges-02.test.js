@@ -27,7 +27,7 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   arr.push(arr[0]);
-  console.log(arr);
+  //console.log(arr);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-  // Solution code here...
+  obj.yearBorn = year;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,9 +63,21 @@ console.log(people[1].isAuthor) prints true
 ------------------------------------------------------------------------------------------------ */
 
 const setStatusAsAuthor = (people) => {
-  // Solution code here...
+  for(let i = 0; i<people.length; i++){
+    people[i].isAuthor = true;
+  }
 };
 
+// describe('Testing challenge 4', () => {
+//   test('It should add a property to every object in an array', () => {
+//     const a = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }, { fullName: 'Kurt Vonnegut' }];
+//     setStatusAsAuthor(a);
+
+//     expect(a[0].isAuthor).toStrictEqual(true);
+//     expect(a[1].isAuthor).toStrictEqual(true);
+//     expect(a[2].isAuthor).toStrictEqual(true);
+//   });
+// });
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
