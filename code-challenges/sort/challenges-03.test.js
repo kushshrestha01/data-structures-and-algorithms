@@ -104,7 +104,7 @@ const people = [
 ];
 
 const sortPeople = (arr) => {
-  return arr.sort((a,b) => a.lastName-b.lastName);
+  return arr.sort((a,b) => b.lastName-a.lastName);
 };
 
 /* ------------------------------------------------------------------------------------------------
