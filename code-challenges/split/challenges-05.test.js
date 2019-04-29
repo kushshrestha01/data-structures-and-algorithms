@@ -84,10 +84,8 @@ const listFoods = (recipe) => {
   for(let i = 0; i < recipe.ingredients.length; i++){
     let list = recipe.ingredients[i].split(' ');
     let newList = list.slice(2);
-    console.log(newList);
     result.push(newList.join(' '));
   }
-  console.log(result);
   return result;
 };
 
@@ -104,10 +102,8 @@ const splitFoods = (recipe) => {
   for(let i = 0; i < recipe.ingredients.length; i++){
     let list = recipe.ingredients[i].split(' ');
     let newList = list.slice(2);
-    console.log(newList);
     result.push(newList.join(' '));
   }
-  console.log(result);
   return result;
 };
 
@@ -128,7 +124,6 @@ const stepActions = (recipe) => {
     let stepsList = list.split(' ')[0];
     result.push(stepsList)
   }
-
   return result;
 };
 
@@ -185,7 +180,6 @@ const removeLastCharacters = (str, numberOfCharacters) => {
     return newStr;
   }
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
