@@ -83,14 +83,11 @@ const listFoods = (recipe) => {
   let result = [];
   recipe.ingredients.forEach((ing) => {
     let firstSpace = ing.indexOf(' ');
-    //console.log(firstSpace);
     let secondSpace =  ing.indexOf(' ', firstSpace+1)
     result.push(ing.slice(secondSpace + 1));
-    console.log(result.push(ing.slice(secondSpace + 1)));
   });
   return result;
 };
-
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
