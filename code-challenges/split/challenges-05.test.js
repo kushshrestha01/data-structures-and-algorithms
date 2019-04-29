@@ -81,13 +81,16 @@ const gruffaloCrumble = {
 
 const listFoods = (recipe) => {
   let result = [];
-  for(let i = 0; i < recipe.ingredients.length; i++){
-    let list = recipe.ingredients[i].split(' ');
-    let newList = list.slice(2);
-    result.push(newList.join(' '));
-  }
+  recipe.ingredients.forEach((ing) => {
+    let firstSpace = ing.indexOf(' ');
+    //console.log(firstSpace);
+    let secondSpace =  ing.indexOf(' ', firstSpace+1)
+    result.push(ing.slice(secondSpace + 1));
+    console.log(result.push(ing.slice(secondSpace + 1)));
+  });
   return result;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
