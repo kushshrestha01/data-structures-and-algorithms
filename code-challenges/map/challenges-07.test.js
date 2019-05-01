@@ -26,7 +26,7 @@ Write a function named forEachTwoToThe that produces the same output as your for
 
 const forEachTwoToThe = (arr) => {
   let newArray = [];
-  arr.forEach(arr => {
+  arr.forEach((arr) => {
     newArray.push(Math.pow(2,arr))
   })
   return newArray;
@@ -40,7 +40,7 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 
 const mapTwoToThe = (arr) => {
   let newArray = [];
-  arr.map(arr => {
+  arr.map((arr) => {
     newArray.push(Math.pow(2,arr));
   });
   return newArray;
@@ -58,7 +58,7 @@ For example: charCode(['h','i']) returns [104, 105].
 
 const charCode = (arr) => {
   let newArray = [];
-  arr.map(arr => {
+  arr.map((arr) => {
     newArray.push(arr.charCodeAt());
   });
   return newArray;
@@ -76,7 +76,7 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 
 const evenOdd = (arr) => {
   let newArray = [];
-  arr.map(arr => {
+  arr.map((arr) => {
     if(isNaN(arr)){
       newArray.push('N/A')
     }
@@ -134,7 +134,7 @@ const snorlaxAbilities = {
 
 const extractAbilities = (arr) => {
   let newArray = [];
-  arr.map(arr => {
+  arr.map((arr) => {
     newArray.push(arr.ability.name);
   });
   return newArray;
@@ -184,18 +184,12 @@ const snorlaxStats = {
 };
 
 const extractStats = (arr) => {
-  let newArray = [];
-  function NewArray(name, total) {
-    this.name = name;
-    this.total = total;
-    this.newArray;
-  }
-  arr.prototype.map(arr => {
-    this.name(arr.stat.name), 
-    this.total(arr.effort + arr.baseStat)
-  });
-  return newArray;
-};
+  return arr.map((arr) => ({
+    name : arr.stat.name,
+    total : arr.effort + arr.baseStat
+  }));
+}
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
