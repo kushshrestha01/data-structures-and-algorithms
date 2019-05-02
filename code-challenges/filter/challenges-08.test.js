@@ -150,8 +150,6 @@ const characters = [
 const getCharactersWithoutChildren = (arr) => {
   arr.filter((char) => !(char.children))
 };
-// return arr.filter((value) => !forbiddenValues.includes(value));
-// arr.filter((character) => !character.children);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
