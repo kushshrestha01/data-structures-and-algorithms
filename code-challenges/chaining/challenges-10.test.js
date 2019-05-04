@@ -61,12 +61,8 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  let array = input.reduce((accumulator, currentValue) => {
-    if(accumulator[0][0] % 5 === 0){
-      console.log(accumulator[0][0]);
-    }
-  })
-  console.log(array);
+  input.filter(element => element%5===0)
+  console.log(input);
   // let array = [];
   // if(input[0][0]%5 === 0){
   //   array.push(input[0][0])
