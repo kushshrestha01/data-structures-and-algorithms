@@ -65,21 +65,16 @@ const divisibleByFiveTwoToThePower = (input) => {
   let array = [];
   for(let i = 0; i < input.length; i++){
     array = input[i].filter(element => {
-      if(element % 5 === 0 || element === 0){
+      if(element % 5 === 0 && element === parseInt(element)){
         return element;
       }
     });
     newArray.push(array);
+    // console.log(newArray);
   }
   for(let i = 0; i < newArray.length; i++){
-    if (typeof newArray[i] === 'number'){
-      newArray[i] = newArray[i].map(element => Math.pow(2,element));
-    }
-    else {
-      return newArray;
-    }
+    newArray[i] = newArray[i].map(element => Math.pow(2,element));
   }
-  console.log(newArray);
   return newArray;
 };
 
@@ -161,13 +156,10 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   let array = [];
-  let result;
   array = data.map(element => element.name);
-  console.log(
-    array.reduce(function(a, b) {
-      return a.length <= b.length ? a : b;
-    })
-  )
+  return array.reduce(function(a, b) {
+    return a.length < b.length ? a : b;
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -201,7 +193,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return numbers divisible by five, then raise two to the power of the resulting numbers', () => {
     expect(divisibleByFiveTwoToThePower([[10, 20, 5, 4], [5, 6, 7, 9], [1, 10, 3]])).toStrictEqual([[1024, 1048576, 32], [32], [1024]]);
   });
