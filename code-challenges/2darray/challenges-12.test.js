@@ -23,7 +23,11 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
+  let result = [];
+  for(let i = 0; i < hoursOpen.length; i++) {
+    result.push(firstPike[i] + seaTac[i] + seattleCenter[i] + capHill[i] + alkiBeach[i]);
+  }
+  return result;
 
 };
 
@@ -38,8 +42,16 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  let finalResult = [];
+  hours.forEach((hours,i) =>{
+    let results = {};
+    finalResult.push(results);
+    results.sales = data[i] + ' cookies';
+    results.time = hours;
+  });
+  return finalResult;
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -60,7 +72,7 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  return arr[2].items[1].quantity;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -82,7 +94,11 @@ The top row of the board is considered row zero and row numbers increase as they
 ------------------------------------------------------------------------------------------------ */
 
 const battleship = (board, row, col) => {
-  //  Solution code here...
+  if (board[row][col] === '#') {
+    return 'hit';
+  } else {
+    return 'miss';
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -94,7 +110,13 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 ------------------------------------------------------------------------------------------------ */
 
 const calculateProduct = (numbers) => {
-  // Solution code here...
+  let result = 1;
+  for(let i = 0; i < numbers.length; i++){
+    for(let j = 0; j < numbers[i].length; j++){
+      result *= numbers[i][j];
+    }
+  }
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -114,7 +136,16 @@ const weeklyTemperatures = [
 ];
 
 const averageDailyTemperature = (weather) => {
-  // Solution code here...
+  let total = 0;
+  let length = 0;
+  for(let i = 0; i < weather.length; i++){
+    for(let j = 0; j < weather[i].length; j++){
+      total += weather[i][j];
+      length = weather[i].length * weather.length;
+    }
+  }
+  let average = total / length;
+  return average;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -135,7 +166,13 @@ let lowestWeeklyTemperatureData = [
 ];
 
 const lowestWeeklyAverage = (weather) => {
-  // Solution code here...
+  let totalDaily = 0;
+  let dailyAverage = [];
+  weather.forEach((dailyWeather) => {
+    totalDaily = dailyWeather.reduce((accumulator, currentValue) => accumulator + currentValue);
+    dailyAverage.push(totalDaily / 7);
+  });
+  return Math.min.apply(Math, dailyAverage);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -151,7 +188,21 @@ For example, excel('1,1,1\n4,4,4\n9,9,9') returns [3, 12, 27].
 ------------------------------------------------------------------------------------------------ */
 
 const excel = (str) => {
-  // Solution code here...
+  let result = [];
+  let sum = 0;
+  let splitSecond = [];
+  let splitFirst = str.split('\n');
+  for(let i = 0; i < splitFirst.length; i++) {
+    splitSecond.push(splitFirst[i].split(','));
+  }
+  for (let i = 0; i < splitSecond.length; i++) {
+    for (let j =0; j < splitSecond[i].length; j++){
+      sum += parseInt(splitSecond[i][j]);
+    }
+    result.push(sum);
+    sum = 0;
+  }
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
