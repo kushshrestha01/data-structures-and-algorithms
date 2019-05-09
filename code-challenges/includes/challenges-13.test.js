@@ -95,7 +95,13 @@ Write a function named findAnything that takes in an array of strings, along wit
 ------------------------------------------------------------------------------------------------ */
 
 const findAnything = (arr, target) => {
-  console.log(arr.include(target));
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i].includes(target)){
+      result.push(arr[i]);
+    }
+  }
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -105,7 +111,13 @@ Write a function named findEvery that takes in an array of strings, along with a
 ------------------------------------------------------------------------------------------------ */
 
 const findEvery = (arr, target) => {
-  // Solution code here...
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i].includes(target)){
+      return true;
+    } else {
+      return false;
+    }
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -121,7 +133,11 @@ For example, [['Brook Testing', 'Actual Person'], ['Human Person', 'Brook again'
 ------------------------------------------------------------------------------------------------ */
 
 const unenrollBrook = (arr) => {
-  // Solution code here...
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result.push(arr[i].filter(word => !word.includes('Brook')));
+  }
+  return result;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -232,7 +248,7 @@ describe('Testing challenge 6', () => {
   });
 });
 
-xdescribe('Testing challenge 7', () => {
+describe('Testing challenge 7', () => {
   test('It should determine whether all the strings contain a given string', () => {
     const words = ['things', 'apple pie (:)', ':)banana pie', 'missing that thing', 'cant:)aloupe is tasty'];
 
@@ -242,7 +258,7 @@ xdescribe('Testing challenge 7', () => {
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should remove Brook from all courses', () => {
     const roster = [
       ['Michelle', 'Allie', 'Brook TESTING'],
