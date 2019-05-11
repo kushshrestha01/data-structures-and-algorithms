@@ -90,10 +90,8 @@ hasChildrenValues(characters, 'Eddard') will return true
 
 const hasChildrenValues = (arr, character) => {
   for(let i = 0; i < arr.length; i++){
-    //console.log(Object.values(arr[i])[2]);
     if(Object.values(arr[i])[0] === character){
       if(Object.values(arr[i])[2].length !== 0){
-        //console.log('working')
         return true
       }
       else {
@@ -114,7 +112,6 @@ The input and output of this function are the same as the input and output from 
 
 const hasChildrenEntries = (arr, character) => {
   for(let i = 0; i < arr.length; i++){
-    //console.log(arr[i].name);
     if(arr[i].name === character){
       if((arr[i].children).length){
         return true;
@@ -143,8 +140,6 @@ const totalCharacters = (arr) => {
       }
     }
   }
-  // console.log(charArray);
-  // console.log(charArray.length);
   charArray = charArray.filter(Boolean);
   return charArray.length;
 };
