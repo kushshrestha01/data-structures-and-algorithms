@@ -96,7 +96,7 @@ const getStatName = (arr, minBaseStat) => {
   let result = arr.filter((object) => {
     return object.baseStat > minBaseStat
   });
-  return result.map((obj) => obj.state.name);
+  return result.map((obj) => obj.stat.name);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -149,7 +149,7 @@ const characters = [
 ];
 
 const getCharactersWithoutChildren = (arr) => {
-  arr.filter((char) => !(char.children))
+  return arr.filter((char) => !(char.children));
 };
 
 /* ------------------------------------------------------------------------------------------------
