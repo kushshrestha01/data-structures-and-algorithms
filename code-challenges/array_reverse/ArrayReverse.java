@@ -4,8 +4,10 @@ public class ArrayReverse {
   public static void main (String[] args) {
     // create the array to test your code on later
     int[] startArr = new int[] {1,2,3,4,5,10};
+
     // print it out, nicely
     System.out.println(Arrays.toString(startArr));
+
     // call your reverseArray method and save the result in a variable
     int[] endArr = reverseArray(startArr);
     // print out the result, nicely
@@ -14,9 +16,13 @@ public class ArrayReverse {
 
   // the method you should write, to reverse an array
   public static int[] reverseArray(int[] inputArray) {
-    // your code goes here!
-    // for now, to make sure that it compiles, here is a bad answer
-    return new int[0];
+     //reverseArray method
+    int[] reverseArray = new int[inputArray.length];
+    int a = 6;
+    for(int i = 0; i < inputArray.length; i++) {
+      reverseArray[a - 1] = inputArray[i];
+      a--;
+    }
+    return reverseArray;
   }
-    
 }
