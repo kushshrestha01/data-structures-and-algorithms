@@ -18,7 +18,7 @@ public class ArrayReverse {
   public static int[] reverseArray(int[] inputArray) {
      //reverseArray method
     int[] reverseArray = new int[inputArray.length];
-    int a = 6;
+    int a = inputArray.length;
     for(int i = 0; i < inputArray.length; i++) {
       reverseArray[a - 1] = inputArray[i];
       a--;
