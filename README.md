@@ -4,4 +4,4 @@
 
 ### Table of Contents
 
-1. [Array Shift] (401-code-challenges/array-shift/README.md) 
+1. [Array Shift](401-code-challenges/array-shift/README.md) 
