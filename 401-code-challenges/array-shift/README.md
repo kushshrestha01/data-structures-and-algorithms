@@ -8,4 +8,4 @@ A function insertShiftArray which takes in an array and the value to be added an
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Solution
-<!-- Embedded whiteboard image -->
+[[https://github.com/kushshrestha01/data-structures-and-algorithms/blob/master/assets/array_shift.jpeg|alt=whiteboard]]
