@@ -24,4 +24,15 @@ public class ArrayShiftTest {
                 classUnderTest.insertShiftArray(inputArr, value));
     }
 
+    @Test
+    public void testInsertShiftArrayEven() {
+        ArrayShift classUnderTest = new ArrayShift();
+        int[] inputArr = new int[]{2,4,6,8};
+        int value = 5;
+        int[] expectedOutput = new int[]{2,4,5,6,8};
+        assertArrayEquals("adding a value in the midpoint",
+                expectedOutput,
+                classUnderTest.insertShiftArray(inputArr, value));
+    }
+
 }
