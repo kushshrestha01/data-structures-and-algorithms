@@ -1,6 +1,6 @@
 # data-structures-and-algorithms
 
-## Code Challenges
+## 401 Code Challenges
 
 ### Table of Contents
 
