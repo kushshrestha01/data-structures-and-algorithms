@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7acb0c5-9f3b-4625-9c97-94abdc8096bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../401-code-challenges/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../401-code-challenges/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../401-code-challenges/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../401-code-challenges/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../401-code-challenges/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../401-code-challenges/array-shift/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../401-code-challenges/array-shift/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../401-code-challenges/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../401-code-challenges/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
