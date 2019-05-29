@@ -1,3 +1,3 @@
 # data-structures-and-algorithms
 
-# Code Challenges
+## Code Challenges
