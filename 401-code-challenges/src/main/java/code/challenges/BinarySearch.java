@@ -19,13 +19,10 @@ public class BinarySearch {
             if (arr[mid] < x)
                 left = mid + 1;
 
-                // If x is smaller, ignore right half
+            // If x is smaller, ignore right half
             else
                 right = mid - 1;
         }
-
-        // if we reach here, then element was
-        // not present
         return -1;
         }
 }
