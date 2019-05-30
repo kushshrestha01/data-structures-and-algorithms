@@ -7,11 +7,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class ArrayShiftTest {
-    @Test
-    public void testSomeLibraryMethod() {
-        ArrayShift classUnderTest = new ArrayShift();
-        assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
-    }
 
     @Test
     public void testInsertShiftArray() {
