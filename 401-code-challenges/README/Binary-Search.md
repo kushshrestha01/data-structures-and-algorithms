@@ -8,4 +8,4 @@ A function BinarySearch which takes in an array and return the index of the arra
 Started with a whiteboard and used it as a reference to complete the code.
 
 ## Solution
-![Whiteboard]
+![Whiteboard](https://github.com/kushshrestha01/data-structures-and-algorithms/blob/master/assets/binary_search.jpeg)
