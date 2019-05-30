@@ -1,8 +1,8 @@
 # Challenge Summary
-Writing a test to insert a integer in the midpoint of an Array.
+Using Binary Search in a sorted 1D array to return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
 
 ## Challenge Description
-A function insertShiftArray which takes in an array and the value to be added and return an array with the new value added at the middle index.
+A function BinarySearch which takes in an array and return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
 
 ## Approach & Efficiency
 Started with a whiteboard and used it as a reference to complete the code.
