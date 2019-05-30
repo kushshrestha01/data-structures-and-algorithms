@@ -6,12 +6,17 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        int[] inputArr = new int[]{2,4,6,8};
+        int[] inputArr = new int[]{1,2,3};
         int value = 5;
-        double midpoint = (double) inputArr.length/ 2;
-        int roundedMidpoint = (int)(Math.round(midpoint));
-        System.out.println(roundedMidpoint);
-        System.out.println(Arrays.toString(insertShiftArray(inputArr, value)));
+        int[][] weeklyMonthTemperatures = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
+
+        System.out.println((calculateAverage(inputArr)));
+        System.out.println(Arrays.toString(twoDArray(weeklyMonthTemperatures)));
     }
 
     public static int[] insertShiftArray(int[] inputArr, int value) {
@@ -28,4 +33,38 @@ public class Main {
         }
         return newArray;
     }
+
+    public static double calculateAverage(int[] inputArr) {
+        double sum = 0;
+        for(int i = 0; i < inputArr.length; i++) {
+            sum += inputArr[i];
+        }
+        double average =  sum/(double)inputArr.length;
+        return average;
+    }
+
+    public static int [] twoDArray(int[][] inputArr) {
+        double currentAverage = 0;
+        double previousAverage = 0;
+        int[] resultArray = {};
+        boolean firstTime = true;
+
+        for(int i = 0; i < inputArr.length; i++) {
+            currentAverage = calculateAverage(inputArr[i]);
+            if(firstTime){
+                previousAverage = currentAverage;
+                resultArray = inputArr[i];
+                firstTime = false;
+            }
+
+            if(currentAverage < previousAverage){
+                resultArray = inputArr[i];
+                previousAverage = currentAverage;
+            }
+        }
+        return resultArray;
+    }
+
+
+
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ddb9288-d7b0-4b1a-9f67-b2812581bb17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/code/challenges/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/code/challenges/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tets/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tets/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tets/src/com/pluralsight/calcengine/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tets/src/com/pluralsight/calcengine/Main.java" afterDir="false" />
     </list>
@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/code/challenges/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="442">
+              <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
               <folding>
                 <element signature="e#93#94#0" expanded="true" />
                 <element signature="e#120#121#0" expanded="true" />
@@ -528,8 +528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/code/challenges/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="442">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
             <element signature="e#93#94#0" expanded="true" />
             <element signature="e#120#121#0" expanded="true" />
