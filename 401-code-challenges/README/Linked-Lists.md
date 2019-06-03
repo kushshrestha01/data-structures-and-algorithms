@@ -14,6 +14,7 @@ All test passed.
 
 ### API
 1. Insert methods creates a new node and assign the value
+   ``insert(int value)
 2. Includes methods checks for any duplicate value
 3. Print methods returns a Arraylist will all the values in the linkedlist
 
