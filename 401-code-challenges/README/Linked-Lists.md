@@ -13,9 +13,9 @@ Implementing a Singly Linked List Data Structure
 All test passed.
 
 ### API
-Insert methods creates a new node and assign the value
-Includes methods checks for any duplicate value
-Print methods returns a Arraylist will all the values in the linkedlist
+1. Insert methods creates a new node and assign the value
+2. Includes methods checks for any duplicate value
+3. Print methods returns a Arraylist will all the values in the linkedlist
 
 
 ### Reference
