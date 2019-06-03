@@ -13,10 +13,14 @@ Implementing a Singly Linked List Data Structure
 All test passed.
 
 ### API
-1. Insert methods creates a new node and assign the value
-   ``insert(int value)
-2. Includes methods checks for any duplicate value
-3. Print methods returns a Arraylist will all the values in the linkedlist
+1. Insert methods takes a int value, creates a new node and assign the value
+   
+   insert(int value) 
+2. Includes methods takes a int value and returns a boolean
+   
+   includes(int value)
+3. Print methods does not take any value, returns a Arraylist will all the values in the linkedlist
+   print()
 
 
 ### Reference
