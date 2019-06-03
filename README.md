@@ -8,4 +8,5 @@
 2. [Binary Search](401-code-challenges/README/Binary-Search.md)
 
 ## 401 lab
+[Lab 05: Linked Lists]
 
