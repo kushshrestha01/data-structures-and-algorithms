@@ -1,4 +1,4 @@
-#Lab 05: Linked Lists
+# Lab 05: Linked Lists
 
 ## Singly Linked List
 Implementing a Singly Linked List Data Structure
