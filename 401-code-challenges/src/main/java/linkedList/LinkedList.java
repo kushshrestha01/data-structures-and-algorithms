@@ -14,11 +14,10 @@ public class LinkedList {
         node.next = null;
         if(head == null) {
             head = node;
-            current = node;
         }
         else {
-            current.next = node;
-            current = node;
+            head.next = node;
+            head = node;
         }
     }
 
@@ -44,6 +43,26 @@ public class LinkedList {
             i++;
         }
         return result;
+    }
+
+    public void append(int value) {
+        Node node = new Node();
+        node.value = value;
+        node.next = null;
+        if(head == null) {
+            head = node;
+            current = node;
+        }
+        else {
+            while (node.next != null){
+                if (node.next.value == value) {
+                    current.next = null;
+                    current.value = value;
+                }
+                node = node.next;
+            }
+        }
+
     }
 
 }
