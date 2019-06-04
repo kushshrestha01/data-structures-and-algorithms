@@ -14,11 +14,10 @@ public class LinkedList {
         node.next = null;
         if(head == null) {
             head = node;
-            current = node;
         }
         else {
-            current.next = node;
-            current = node;
+            node.next = head;
+            head = node;
         }
     }
 
@@ -44,6 +43,70 @@ public class LinkedList {
             i++;
         }
         return result;
+    }
+
+
+    //Code Challenge 06
+    public void append(int value) {
+        Node node = new Node();
+        if(head == null) {
+            head = node;
+        }
+        else {
+            current = head;
+            while(current.next != null) {
+                current = current.next;
+            }
+            current.next = node;
+            current.next.value = value;
+        }
+
+    }
+
+    public void insertBefore(int value, int newVal) {
+        Node node = new Node();
+        if(head == null) {
+            head = node;
+        }
+        else {
+            current = head;
+            while(current.next != null){
+                if(head.value == value) {
+                    node.next = head;
+                    head = node;
+                    node.value = newVal;
+                    return;
+                }
+                else if(current.next.value == value){
+                    node.value = newVal;
+                    node.next = current.next;
+                    current.next = node;
+                    return;
+                }
+                current =current.next;
+            }
+        }
+    }
+
+    public void insertAfter(int value, int newVal) {
+        Node node = new Node();
+        if(head == null) {
+            head = node;
+        }
+        else {
+            current = head;
+            while(current.next != null){
+                if(current.value == value){
+                    node.value = newVal;
+                    node.next = current.next;
+                    current.next = node;
+                    return;
+                }
+                current =current.next;
+            }
+            current.next = node;
+            current.next.value = newVal;
+        }
     }
 
 }

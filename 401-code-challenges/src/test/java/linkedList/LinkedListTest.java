@@ -34,7 +34,7 @@ public class LinkedListTest {
         int expectedOutput = 11;
         assertEquals("checking if the head points to first node",
                 expectedOutput,
-                pointTest.head.next.value);
+                pointTest.head.value);
 
     }
 
@@ -48,7 +48,7 @@ public class LinkedListTest {
         int expectedOutput = 13;
         assertEquals("Checking if inserts multiple nodes into the linked list",
                 expectedOutput,
-                multipleTest.head.next.next.next.value);
+                multipleTest.head.value);
     }
 
     @Test
@@ -80,7 +80,7 @@ public class LinkedListTest {
         printTest.insert(11);
         printTest.insert(12);
         printTest.insert(13);
-        int expectedOutput = 10;
+        int expectedOutput = 13;
         int output = printTest.print().get(0);
 
         assertEquals("checking the print values",
@@ -89,4 +89,101 @@ public class LinkedListTest {
     }
 
 
+    //Code Challenge 06
+    @Test
+    public void testAppend() {
+        LinkedList appendTest = new LinkedList();
+        appendTest.insert(10);
+        appendTest.insert(11);
+        appendTest.insert(12);
+        appendTest.insert(13);
+        int expectedOutput = 2;
+        appendTest.append(2);
+        int output = appendTest.print().get(4);
+        assertEquals("checking the print values",
+                expectedOutput,
+                output);
+    }
+
+    @Test
+    public void testAppendMultiple() {
+        LinkedList appendTest = new LinkedList();
+        appendTest.insert(10);
+        appendTest.insert(11);
+        appendTest.insert(12);
+        appendTest.insert(13);
+        appendTest.append(2);
+        int expectedOutput = 2;
+        appendTest.append(3);
+        int expectedOutput2 = 3;
+        int output = appendTest.print().get(4);
+        int output2 = appendTest.print().get(5);
+
+        assertEquals("checking the print values",
+                expectedOutput,
+                output);
+        assertEquals("checking the print values",
+                expectedOutput2,
+                output2);
+    }
+
+    @Test
+    public void testInsertBefore() {
+        LinkedList insertBeforeTest = new LinkedList();
+        insertBeforeTest.insert(10);
+        insertBeforeTest.insert(11);
+        insertBeforeTest.insert(12);
+        insertBeforeTest.insert(13);
+        insertBeforeTest.insertBefore(11,12323);
+        int expectedOutput = 12323;
+        int output = insertBeforeTest.print().get(2);
+        assertEquals("checking for insert before function",
+                expectedOutput,
+                output);
+    }
+
+    @Test
+    public void testInsertBeforeFirstNode() {
+        LinkedList insertBeforeTest = new LinkedList();
+        insertBeforeTest.insert(10);
+        insertBeforeTest.insert(11);
+        insertBeforeTest.insert(12);
+        insertBeforeTest.insert(13);
+        insertBeforeTest.insertBefore(13,12323);
+        int expectedOutput = 12323;
+        int output = insertBeforeTest.print().get(0);
+        assertEquals("checking for insert before function",
+                expectedOutput,
+                output);
+    }
+
+    @Test
+    public void testInsertAfter() {
+        LinkedList insertAfterTest = new LinkedList();
+        insertAfterTest.insert(10);
+        insertAfterTest.insert(11);
+        insertAfterTest.insert(12);
+        insertAfterTest.insert(13);
+        insertAfterTest.insertAfter(11,1111);
+        int expectedOutput = 1111;
+        int output = insertAfterTest.print().get(3);
+        assertEquals("checking for insert after function",
+                expectedOutput,
+                output);
+    }
+
+    @Test
+    public void testInsertAfterLastNode() {
+        LinkedList insertAfterTest = new LinkedList();
+        insertAfterTest.insert(10);
+        insertAfterTest.insert(11);
+        insertAfterTest.insert(12);
+        insertAfterTest.insert(13);
+        insertAfterTest.insertAfter(10,1111);
+        int expectedOutput = 1111;
+        int output = insertAfterTest.print().get(4);
+        assertEquals("checking for insert after function",
+                expectedOutput,
+                output);
+    }
 }
