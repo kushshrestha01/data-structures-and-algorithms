@@ -71,7 +71,13 @@ public class LinkedList {
         else {
             current = head;
             while(current.next != null){
-                if(current.next.value == value){
+                if(head.value == value) {
+                    node.next = head;
+                    head = node;
+                    node.value = newVal;
+                    return;
+                }
+                else if(current.next.value == value){
                     node.value = newVal;
                     node.next = current.next;
                     current.next = node;
@@ -98,6 +104,8 @@ public class LinkedList {
                 }
                 current =current.next;
             }
+            current.next = node;
+            current.next.value = newVal;
         }
     }
 

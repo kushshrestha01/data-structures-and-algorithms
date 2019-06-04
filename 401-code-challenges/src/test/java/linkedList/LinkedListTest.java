@@ -149,9 +149,9 @@ public class LinkedListTest {
         insertBeforeTest.insert(11);
         insertBeforeTest.insert(12);
         insertBeforeTest.insert(13);
-        insertBeforeTest.insertBefore(12,12323);
+        insertBeforeTest.insertBefore(13,12323);
         int expectedOutput = 12323;
-        int output = insertBeforeTest.print().get(1);
+        int output = insertBeforeTest.print().get(0);
         assertEquals("checking for insert before function",
                 expectedOutput,
                 output);
