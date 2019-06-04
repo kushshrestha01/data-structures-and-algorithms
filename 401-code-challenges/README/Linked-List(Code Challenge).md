@@ -4,7 +4,7 @@ Writing a method for different type of Linked list insertions.
 ## Challenge Description
 1. A function append takes in an int value and appends it to the end of the linked list . <br/>
 2. A function insertBefore which takes target value and new value and adds a new node with the given newValue immediately before the target value node . <br/>
-3.A function insertAfter which takes target value and new value and adds a new node with 
+3. A function insertAfter which takes target value and new value and adds a new node with 
 the given newValue immediately after the target value node . <br/> 
 
 ## Approach & Efficiency
