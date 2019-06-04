@@ -9,5 +9,8 @@
 3. [Linked List](401-code-challenges/README/Linked-List-Code-Challenge.md)
 
 ## 401 lab
+
+### Table of Contents
+
 [Lab 05: Linked Lists](401-code-challenges/README/Linked-Lists.md)
 
