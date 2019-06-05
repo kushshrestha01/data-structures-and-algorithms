@@ -34,7 +34,7 @@ public class LinkedListTest {
         int expectedOutput = 10;
         assertEquals("checking if the head points to first node",
                 expectedOutput,
-                pointTest.head.value);
+                pointTest.head.next.value);
 
     }
 
@@ -45,10 +45,15 @@ public class LinkedListTest {
         multipleTest.insert(11);
         multipleTest.insert(12);
         multipleTest.insert(13);
-        int expectedOutput = 10;
-        assertEquals("Checking if inserts multiple nodes into the linked list",
-                expectedOutput,
+        assertEquals("Checking if inserts multiple nodes into the linked list first value in linked list",
+                13,
                 multipleTest.head.value);
+        assertEquals("Checking if inserts multiple nodes into the linked list, second value in linked list",
+                12,
+                multipleTest.head.next.value);
+        assertEquals("Checking if inserts multiple nodes into the linked list, third value in linked list",
+                11,
+                multipleTest.head.next.next.value);
     }
 
     @Test
