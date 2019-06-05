@@ -103,13 +103,62 @@ public class LinkedListTest {
                 output);
 
     }
-    public void testKGreaterThan() {
+
+    @Test
+    public void testKGreaterThanLength() {
         LinkedList linkedListTest = new LinkedList();
         linkedListTest.insert(10);
         linkedListTest.insert(11);
         linkedListTest.insert(12);
         linkedListTest.insert(13);
         linkedListTest.insert(14);
+        int expectedOutput = 0;
+        int output = linkedListTest.linkedList(8);
+        assertEquals("if k value larger than size",
+                expectedOutput,
+                output);
+
+    }
+
+    @Test
+    public void testKValueEqualsSize() {
+        LinkedList linkedListTest = new LinkedList();
+        linkedListTest.insert(10);
+        linkedListTest.insert(11);
+        linkedListTest.insert(12);
+        linkedListTest.insert(13);
+        linkedListTest.insert(14);
+        int expectedOutput = 14;
+        int output = linkedListTest.linkedList(4);
+        assertEquals("if k value equals size",
+                expectedOutput,
+                output);
+    }
+
+    @Test
+    public void testKValueNegative() {
+        LinkedList linkedListTest = new LinkedList();
+        linkedListTest.insert(10);
+        linkedListTest.insert(11);
+        linkedListTest.insert(12);
+        linkedListTest.insert(13);
+        linkedListTest.insert(14);
+        int expectedOutput = 0;
+        int output = linkedListTest.linkedList(-1);
+        assertEquals("if k value equals size",
+                expectedOutput,
+                output);
+    }
+
+    @Test
+    public void testLinkedListSizeOne() {
+        LinkedList linkedListTest = new LinkedList();
+        linkedListTest.insert(10);
+        int expectedOutput = 10;
+        int output = linkedListTest.linkedList(0);
+        assertEquals("if k value equals size",
+                expectedOutput,
+                output);
     }
 
     //Code Challenge 06
