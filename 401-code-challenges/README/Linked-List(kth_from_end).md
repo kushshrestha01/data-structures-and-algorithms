@@ -2,7 +2,7 @@
 Writing a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list.
 
 ## Challenge Description
-1. A method size is used to calculate the length of the Linked List. <br/>
+1. A method size was created and used to calculate the length of the Linked List. <br/>
 2. A method linkedList then which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. . <br/>
  
 ## Approach & Efficiency
