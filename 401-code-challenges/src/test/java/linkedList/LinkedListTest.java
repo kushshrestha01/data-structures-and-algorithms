@@ -31,7 +31,7 @@ public class LinkedListTest {
         LinkedList pointTest = new LinkedList();
         pointTest.insert(10);
         pointTest.insert(11);
-        int expectedOutput = 11;
+        int expectedOutput = 10;
         assertEquals("checking if the head points to first node",
                 expectedOutput,
                 pointTest.head.value);
@@ -45,7 +45,7 @@ public class LinkedListTest {
         multipleTest.insert(11);
         multipleTest.insert(12);
         multipleTest.insert(13);
-        int expectedOutput = 13;
+        int expectedOutput = 10;
         assertEquals("Checking if inserts multiple nodes into the linked list",
                 expectedOutput,
                 multipleTest.head.value);
@@ -88,6 +88,29 @@ public class LinkedListTest {
                output);
     }
 
+    @Test
+    public void testLinkedList() {
+        LinkedList linkedListTest = new LinkedList();
+        linkedListTest.insert(10);
+        linkedListTest.insert(11);
+        linkedListTest.insert(12);
+        linkedListTest.insert(13);
+        linkedListTest.insert(14);
+        int expectedOutput = 11;
+        int output = linkedListTest.linkedList(1);
+        assertEquals("checking the linkedList function",
+                expectedOutput,
+                output);
+
+    }
+    public void testKGreaterThan() {
+        LinkedList linkedListTest = new LinkedList();
+        linkedListTest.insert(10);
+        linkedListTest.insert(11);
+        linkedListTest.insert(12);
+        linkedListTest.insert(13);
+        linkedListTest.insert(14);
+    }
 
     //Code Challenge 06
     @Test
