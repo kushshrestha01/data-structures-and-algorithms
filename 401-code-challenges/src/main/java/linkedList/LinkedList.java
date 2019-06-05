@@ -76,6 +76,9 @@ public class LinkedList {
     }
 
     public int linkedList(int k) {
+        if(k > size() || k < 0){
+            return 0;
+        }
         int location = size() - k - 1;
         int i = 0;
         int result = 0;
