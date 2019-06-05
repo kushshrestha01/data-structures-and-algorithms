@@ -16,7 +16,7 @@ public class LinkedList {
             head = node;
         }
         else {
-            head.next = node;
+            node.next = head;
             head = node;
         }
     }
@@ -73,6 +73,20 @@ public class LinkedList {
             temp = temp.next;
         }
         return i;
+    }
+
+    public int linkedList(int k) {
+        int location = size() - k - 1;
+        int i = 0;
+        int result = 0;
+        while(head != null) {
+            if(i == location){
+                result = head.value;
+            }
+            i++;
+            head = head.next;
+        }
+        return result;
     }
 
 }
