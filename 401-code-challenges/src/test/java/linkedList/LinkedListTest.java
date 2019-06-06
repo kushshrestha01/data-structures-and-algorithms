@@ -278,10 +278,13 @@ public class LinkedListTest {
         list2.insert(3);
         list2.insert(4);
 
-        Node expectedOutput = list1.head;
-        Node output = list1.mergeLists(list1,list2);
+        int expectedOutput = list1.head.value;
+        int output = list1.mergeLists(list1,list2).value;
         assertEquals("checking the head node",
                 expectedOutput,
                 output);
+        assertEquals("checking the 4th item",
+                3,
+                list1.mergeLists(list1, list2).next.next.next.value);
     }
 }
