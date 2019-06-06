@@ -136,5 +136,20 @@ public class LinkedList {
         return result;
     }
 
+    public Node mergeLists(LinkedList list1, LinkedList list2) {
+        Node first = list1.head;
+        Node second = list2.head;
+
+        while (first != null && second != null) {
+            Node a1 = first.next;
+            Node b1 = second.next;
+            first.next = second;
+            second.next = a1;
+            first = a1;
+            second = b1;
+        }
+        return first;
+    }
+
 }
 

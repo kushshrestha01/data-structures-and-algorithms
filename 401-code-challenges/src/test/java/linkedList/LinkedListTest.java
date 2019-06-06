@@ -263,4 +263,25 @@ public class LinkedListTest {
                 expectedOutput,
                 output);
     }
+
+    @Test
+    public void testMergedList() {
+        LinkedList list1 = new LinkedList();
+        list1.insert(11);
+        list1.insert(12);
+        list1.insert(13);
+        list1.insert(14);
+
+        LinkedList list2 = new LinkedList();
+        list2.insert(1);
+        list2.insert(2);
+        list2.insert(3);
+        list2.insert(4);
+
+        Node expectedOutput = list1.head;
+        Node output = list1.mergeLists(list1,list2);
+        assertEquals("checking the head node",
+                expectedOutput,
+                output);
+    }
 }
