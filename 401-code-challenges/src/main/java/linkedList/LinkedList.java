@@ -136,9 +136,8 @@ public class LinkedList {
         return result;
     }
 
-    public Node mergeLists(LinkedList list1, LinkedList list2) {
+    public LinkedList mergeLists(LinkedList list1, LinkedList list2) {
 
-        Node temp = list1.head;
         Node first = list1.head;
         Node second = list2.head;
 
@@ -150,7 +149,7 @@ public class LinkedList {
             first = a1;
             second = b1;
         }
-        return temp;
+        return list1;
     }
 
 }
