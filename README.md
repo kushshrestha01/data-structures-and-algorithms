@@ -15,4 +15,5 @@
 ### Table of Contents
 
 [Lab 05: Linked Lists](401-code-challenges/README/Linked-Lists.md)
+[Lab 10: Stack and Queue Implementation](401-code-challenges/README/Stack-Queue.md)
 
