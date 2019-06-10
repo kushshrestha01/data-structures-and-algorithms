@@ -5,7 +5,11 @@ Implementing a Stack and a Queue Data Structure
 
 ### Challenge
 1. Creating a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
-2. Defining a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
+2. Create a Stack class that has a top property. It creates an empty Stack when instantiated.
+This object should be aware of a default empty value assigned to top when the stack is created.
+Define a method called push which takes any value as an argument and adds a new node with that value to the top of the stack with an O(1) Time performance.
+Define a method called pop that does not take any argument, removes the node from the top of the stack, and returns the node’s value.
+Define a method called peek that does not take an argument and returns the value of the node located on top of the stack, without removing it from the stack.
 3. Defining a method called includes which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
 4. Defining a method called print which takes in no arguments and returns a collection all of the current Node values in the Linked List.
 
