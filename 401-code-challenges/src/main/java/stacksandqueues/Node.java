@@ -1,4 +1,4 @@
-package linkedList;
+package stacksandqueues;
 
 public class Node {
     int value;
