@@ -5,7 +5,9 @@ public class Queue {
     Node front = new Node();
 
     public Queue(){
+
         this.back = null;
+        this.front = null;
     }
 
     public void enqueue(int value) {
