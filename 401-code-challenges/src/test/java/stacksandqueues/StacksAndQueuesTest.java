@@ -41,7 +41,7 @@ public class StacksAndQueuesTest {
         testStack.push(4);
         int output = testStack.pop();
         assertEquals("checking can successfully pop off the stack",
-                3,
+                4,
                 output);
     }
 
@@ -51,6 +51,7 @@ public class StacksAndQueuesTest {
         testStack.push(1);
         testStack.push(2);
         testStack.push(3);
+        testStack.pop();
         testStack.pop();
         testStack.pop();
         testStack.pop();
@@ -71,7 +72,7 @@ public class StacksAndQueuesTest {
         testStack.peek());
     }
 
-    @Test (expected=NullPointerException.class)
+    @Test
     public void testNewStack() {
         Stack testStack = new Stack();
         assertNull("Checking can successfully instantiate an empty stack",

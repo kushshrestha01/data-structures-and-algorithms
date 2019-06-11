@@ -32,7 +32,7 @@ public class Stack {
 
     public Integer peek() {
         if (top == null) {
-            throw new NullPointerException("empty");
+            return null;
         }
         return top.value;
     }
