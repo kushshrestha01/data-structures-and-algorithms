@@ -1,11 +1,10 @@
 # Challenge Summary
-Writing a method for different type of Linked list insertions.
+Implement a Queue using two Stacks.
 
 ## Challenge Description
-1. A function append takes in an int value and appends it to the end of the linked list . <br/>
-2. A function insertBefore which takes target value and new value and adds a new node with the given newValue immediately before the target value node . <br/>
-3. A function insertAfter which takes target value and new value and adds a new node with 
-the given newValue immediately after the target value node . <br/> 
+1. Creating a brand new PseudoQueue class.This PseudoQueue class will implement our standard queue interface and internally only utilize 2 Stack objects.
+2. Method enqueue inserts value into the PseudoQueue, using a first-in, first-out approach.
+3. Method dequeue extracts a value from the PseudoQueue, using a first-in, first-out approach.
 
 ## Approach & Efficiency
 Started with a whiteboard and used it as a reference to complete the code.
