@@ -24,14 +24,15 @@ public class Stack {
         if (top == null) {
             throw new NullPointerException("empty");
         } else {
+            int temp = top.value;
             top = top.next;
-            return top.value;
+            return temp;
         }
     }
 
     public Integer peek() {
         if (top == null) {
-            throw new NullPointerException("empty");
+            return null;
         }
         return top.value;
     }

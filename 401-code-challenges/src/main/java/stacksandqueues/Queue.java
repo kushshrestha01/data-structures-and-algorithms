@@ -17,11 +17,9 @@ public class Queue {
             back = node;
             front = node;
         } else {
-            Node temp = new Node();
-            temp = back;
             back.next = node;
             back = node;
-            back.next = temp;
+            back.next = null;
         }
     }
 

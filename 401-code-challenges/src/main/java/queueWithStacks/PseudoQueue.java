@@ -30,9 +30,7 @@ public class PseudoQueue {
         if(first.peek() == null){
             throw new NullPointerException("empty");
         } else {
-            int x = first.peek();
-            first.pop();
-            return x;
+            return first.pop();
         }
     }
 }

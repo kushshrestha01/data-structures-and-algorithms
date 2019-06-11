@@ -41,7 +41,7 @@ public class StacksAndQueuesTest {
         testStack.push(4);
         int output = testStack.pop();
         assertEquals("checking can successfully pop off the stack",
-                3,
+                4,
                 output);
     }
 
@@ -51,6 +51,7 @@ public class StacksAndQueuesTest {
         testStack.push(1);
         testStack.push(2);
         testStack.push(3);
+        testStack.pop();
         testStack.pop();
         testStack.pop();
         testStack.pop();
@@ -71,7 +72,7 @@ public class StacksAndQueuesTest {
         testStack.peek());
     }
 
-    @Test (expected=NullPointerException.class)
+    @Test
     public void testNewStack() {
         Stack testStack = new Stack();
         assertNull("Checking can successfully instantiate an empty stack",
@@ -132,7 +133,8 @@ public class StacksAndQueuesTest {
         testQueue.dequeue();
         testQueue.dequeue();
         testQueue.dequeue();
-        testQueue.dequeue();
+        testQueue.peek();
+
     }
 
     @Test(expected=NullPointerException.class)
@@ -142,8 +144,15 @@ public class StacksAndQueuesTest {
                 testQueue.peek());
     }
 
-
-
-
-
+    @Test
+    public void testEnqueDeque() {
+        Queue testQueue = new Queue();
+        testQueue.enqueue(1);
+        testQueue.enqueue(2);
+        testQueue.dequeue();
+        testQueue.enqueue(3);
+        assertEquals("checking the front value",
+                2,
+                testQueue.peek());
+    }
 }
