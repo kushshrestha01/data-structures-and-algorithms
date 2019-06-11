@@ -132,7 +132,8 @@ public class StacksAndQueuesTest {
         testQueue.dequeue();
         testQueue.dequeue();
         testQueue.dequeue();
-        testQueue.dequeue();
+        testQueue.peek();
+
     }
 
     @Test(expected=NullPointerException.class)
@@ -142,8 +143,15 @@ public class StacksAndQueuesTest {
                 testQueue.peek());
     }
 
-
-
-
-
+    @Test
+    public void testEnqueDeque() {
+        Queue testQueue = new Queue();
+        testQueue.enqueue(1);
+        testQueue.enqueue(2);
+        testQueue.dequeue();
+        testQueue.enqueue(3);
+        assertEquals("checking the front value",
+                2,
+                testQueue.peek());
+    }
 }
