@@ -65,8 +65,9 @@ public class StacksAndQueuesTest {
         testStack.push(2);
         testStack.push(3);
         testStack.push(4);
+        Integer output = 4;
         assertEquals("Checking can successfully peek the next item on the stack",
-                4,
+                output,
         testStack.peek());
     }
 
