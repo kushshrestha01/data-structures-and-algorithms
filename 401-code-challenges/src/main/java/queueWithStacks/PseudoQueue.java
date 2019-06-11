@@ -17,9 +17,12 @@ public class PseudoQueue {
             first.push(value);
         } else {
             while (first.peek() != null){
-                first.pop();
+                second.push(first.pop());
             }
             first.push(value);
+        }
+        while (second.peek() != null) {
+            first.push(second.pop());
         }
     }
 
@@ -27,7 +30,9 @@ public class PseudoQueue {
         if(first.peek() == null){
             throw new NullPointerException("empty");
         } else {
-            return first.peek();
+            int x = first.peek();
+            first.pop();
+            return x;
         }
     }
 }
