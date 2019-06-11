@@ -29,7 +29,7 @@ public class Stack {
         }
     }
 
-    public int peek() {
+    public Integer peek() {
         if (top == null) {
             throw new NullPointerException("empty");
         }
