@@ -10,7 +10,7 @@ Implement a Queue using two Stacks.
 Started with a whiteboard and used it as a reference to complete the code.
 
 ## Solution
-![Whiteboard]() <br/>
+![Whiteboard](../../assets/queue_with_stacks.jpeg) <br/>
 
 ## [Link to the code](https://github.com/kushshrestha01/data-structures-and-algorithms/blob/master/401-code-challenges/src/main/java/queueWithStacks/PseudoQueue.java)
 
