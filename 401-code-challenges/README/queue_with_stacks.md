@@ -13,3 +13,6 @@ Started with a whiteboard and used it as a reference to complete the code.
 ![Whiteboard]() <br/>
 
 ## [Link to the code](https://github.com/kushshrestha01/data-structures-and-algorithms/blob/master/401-code-challenges/src/main/java/queueWithStacks/PseudoQueue.java)
+
+## Reference
+https://www.geeksforgeeks.org/queue-using-stacks/
