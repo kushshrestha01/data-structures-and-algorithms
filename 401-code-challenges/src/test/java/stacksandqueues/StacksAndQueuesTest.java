@@ -14,7 +14,6 @@ public class StacksAndQueuesTest {
         assertEquals("checking can successfully push onto a stack",
                 expectedOutput,
                 output);
-
     }
 
     @Test
@@ -122,7 +121,7 @@ public class StacksAndQueuesTest {
                 testQueue.peek());
     }
 
-    @Test(expected=NullPointerException.class)
+    @Test
     public void testQueueAfterDequeue() {
         Queue testQueue = new Queue();
         testQueue.enqueue(1);
@@ -131,9 +130,7 @@ public class StacksAndQueuesTest {
         testQueue.dequeue();
         testQueue.dequeue();
         testQueue.dequeue();
-
-        assertNull("checking can successfully empty a stack after multiple pops",
-                testQueue.peek());
+        testQueue.peek();
     }
 
     @Test(expected=NullPointerException.class)
@@ -142,9 +139,4 @@ public class StacksAndQueuesTest {
         assertNull("Can successfully instantiate an empty queue",
                 testQueue.peek());
     }
-
-
-
-
-
 }
