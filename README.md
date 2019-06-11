@@ -9,6 +9,7 @@
 3. [Linked List](401-code-challenges/README/Linked-List-Code-Challenge.md)
 4. [Linked List](401-code-challenges/README/Linked-List(kth_from_end).md) (kth_from_end)
 5. [Linked List](401-code-challenges/README/Linked-List(merged_List).md) (mergelists)
+6. [Queue with stacks](401-code-challenges/README/queue_with_stacks.md)
 
 ## 401 lab
 
