@@ -35,7 +35,7 @@ public class StacksAndQueuesTest {
     @Test
     public void testPop() {
         Stack testStack = new Stack();
-        testStack.push(1);
+        testStack.push(0);
         testStack.push(2);
         testStack.push(3);
         testStack.push(4);
@@ -67,7 +67,7 @@ public class StacksAndQueuesTest {
         testStack.push(4);
         assertEquals("Checking can successfully peek the next item on the stack",
                 4,
-                testStack.peek());
+        testStack.peek());
     }
 
     @Test (expected=NullPointerException.class)
@@ -131,9 +131,7 @@ public class StacksAndQueuesTest {
         testQueue.dequeue();
         testQueue.dequeue();
         testQueue.dequeue();
-
-        assertNull("checking can successfully empty a stack after multiple pops",
-                testQueue.peek());
+        testQueue.dequeue();
     }
 
     @Test(expected=NullPointerException.class)

@@ -31,11 +31,12 @@ public class Queue {
             throw new NullPointerException("empty");
         } else {
             node = front;
-            Node current = back;
-            while (current.next.next == null) {
-                current = current.next;
-            }
-            front = current;
+//            Node current = back;
+//            while (current.next.next == null) {
+//                current = current.next;
+//            }
+//            front = current;
+            front = front.next;
         }
         return node.value;
     }
