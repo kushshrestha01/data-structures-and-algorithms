@@ -10,8 +10,12 @@ public class AnimalShelter {
     AnimalNode dogFront = new AnimalNode();
     AnimalNode dogBack = new AnimalNode();
 
-
-
+    public AnimalShelter(){
+        this.catBack = null;
+        this.catFront = null;
+        this.dogBack = null;
+        this.dogFront = null;
+    }
 
     public void enqueue(String animal){
         if (animal == "cat") {
@@ -37,7 +41,7 @@ public class AnimalShelter {
                 dogBack.next = null;
             }
         } else
-            System.out.println("Invalid Entry");
+            throw new IllegalArgumentException();
     }
 
     public String dequeue(String preferredAnimal) {
