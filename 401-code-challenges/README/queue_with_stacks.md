@@ -10,7 +10,7 @@ Creating a First-in, First out Animal Shelter.
 Started with a whiteboard and used it as a reference to complete the code.
 
 ## Solution
-![Whiteboard](../../assets/queue_with_stacks.jpeg) <br/>
+![Whiteboard](../../assets/animal_shelter.jpeg) <br/>
 
 ## [Link to the code](https://github.com/kushshrestha01/data-structures-and-algorithms/blob/master/401-code-challenges/src/main/java/fifoAnimalShelter/AnimalShelter.java)
 
