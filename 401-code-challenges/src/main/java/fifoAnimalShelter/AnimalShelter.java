@@ -4,31 +4,63 @@ import stacksandqueues.Node;
 
 public class AnimalShelter {
 
-    AnimalNode front = new AnimalNode();
-    AnimalNode back = new AnimalNode();
+    AnimalNode catFront = new AnimalNode();
+    AnimalNode catBack = new AnimalNode();
 
-    public void enqueue(String value){
-        AnimalNode node = new AnimalNode();
-        node.value = value;
-        if(back == null) {
-            back = node;
-            front = node;
-        } else {
-            back.next = node;
-            back = node;
-            back.next = null;
-        }
+    AnimalNode dogFront = new AnimalNode();
+    AnimalNode dogBack = new AnimalNode();
+
+
+
+
+    public void enqueue(String animal){
+        if (animal == "cat") {
+            AnimalNode node = new AnimalNode();
+            node.value = animal;
+            if (catBack == null) {
+                catBack = node;
+                catFront = node;
+            } else {
+                catBack.next = node;
+                catBack = node;
+                catBack.next = null;
+            }
+        } else if (animal == "dog") {
+            AnimalNode node = new AnimalNode();
+            node.value = animal;
+            if (dogBack == null) {
+                dogBack = node;
+                dogFront = node;
+            } else {
+                dogBack.next = node;
+                dogBack = node;
+                dogBack.next = null;
+            }
+        } else
+            System.out.println("Invalid Entry");
     }
 
-    public String dequeue() {
-        AnimalNode node = new AnimalNode();
-        if(front == null) {
-            throw new NullPointerException("empty");
-        } else {
-            node = front;
-            front = front.next;
+    public String dequeue(String preferredAnimal) {
+        if(preferredAnimal == "cat") {
+            AnimalNode node = new AnimalNode();
+            if (catFront == null) {
+                throw new NullPointerException("empty");
+            } else {
+                node = catFront;
+                catFront = catFront.next;
+            }
+            return node.value;
+        } else if(preferredAnimal == "dog") {
+            AnimalNode node = new AnimalNode();
+            if (dogFront == null) {
+                throw new NullPointerException("empty");
+            } else {
+                node = dogFront;
+                dogFront = dogFront.next;
+            }
+            return node.value;
         }
-        return node.value;
+        return null;
     }
 
 }
