@@ -1,10 +1,10 @@
 # Challenge Summary
-Implement a Queue using two Stacks.
+Creating a First-in, First out Animal Shelter.
 
 ## Challenge Description
-1. Creating a brand new PseudoQueue class.This PseudoQueue class will implement our standard queue interface and internally only utilize 2 Stack objects.
-2. Method enqueue inserts value into the PseudoQueue, using a first-in, first-out approach.
-3. Method dequeue extracts a value from the PseudoQueue, using a first-in, first-out approach.
+1. Created a class called AnimalShelter which holds only dogs and cats. The shelter operates using a first-in, first-out approach.
+2. Implemented enqueue method that adds animal to the shelter. animal can be either a dog or a cat object.
+2. Implemented dequeue method that returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 
 ## Approach & Efficiency
 Started with a whiteboard and used it as a reference to complete the code.
@@ -12,7 +12,5 @@ Started with a whiteboard and used it as a reference to complete the code.
 ## Solution
 ![Whiteboard](../../assets/queue_with_stacks.jpeg) <br/>
 
-## [Link to the code](https://github.com/kushshrestha01/data-structures-and-algorithms/blob/master/401-code-challenges/src/main/java/queueWithStacks/PseudoQueue.java)
+## [Link to the code](https://github.com/kushshrestha01/data-structures-and-algorithms/blob/master/401-code-challenges/src/main/java/fifoAnimalShelter/AnimalShelter.java)
 
-## Reference
-https://www.geeksforgeeks.org/queue-using-stacks/
