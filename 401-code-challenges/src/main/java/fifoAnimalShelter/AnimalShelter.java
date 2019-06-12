@@ -18,7 +18,7 @@ public class AnimalShelter {
     }
 
     public void enqueue(String animal){
-        if (animal == "cat") {
+        if (animal.equals("cat")){
             AnimalNode node = new AnimalNode();
             node.value = animal;
             if (catBack == null) {
@@ -29,7 +29,7 @@ public class AnimalShelter {
                 catBack = node;
                 catBack.next = null;
             }
-        } else if (animal == "dog") {
+        } else if (animal.equals("dog")) {
             AnimalNode node = new AnimalNode();
             node.value = animal;
             if (dogBack == null) {
@@ -45,7 +45,7 @@ public class AnimalShelter {
     }
 
     public String dequeue(String preferredAnimal) {
-        if(preferredAnimal == "cat") {
+        if(preferredAnimal.equals("cat")) {
             AnimalNode node = new AnimalNode();
             if (catFront == null) {
                 throw new NullPointerException("empty");
@@ -54,7 +54,7 @@ public class AnimalShelter {
                 catFront = catFront.next;
             }
             return node.value;
-        } else if(preferredAnimal == "dog") {
+        } else if(preferredAnimal.equals("dog")) {
             AnimalNode node = new AnimalNode();
             if (dogFront == null) {
                 throw new NullPointerException("empty");
