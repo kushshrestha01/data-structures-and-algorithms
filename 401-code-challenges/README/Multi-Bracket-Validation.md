@@ -1,5 +1,5 @@
 # Challenge Summary
-Writing a method for Multi-bracket Validation of a string.
+Writing a method for Multi-bracket Validation to check if a string has balanced bracket or not.
 
 ## Challenge Description
 A multiBracketValidation method was created which takes a string as its only argument, and return a boolean if 
