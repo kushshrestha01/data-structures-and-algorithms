@@ -2,7 +2,7 @@
 Writing a Multi-bracket Validation method.
 
 ## Challenge Description
-A multiBracketValidation function was created which takes a string as its only argument, and return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets (), {}, [].
+A multiBracketValidation function was created which takes a string as its only argument, and return a boolean representing if the brackets in the string are balanced. 3 types of brackets (), {}, [] were used.
 
 ## Approach & Efficiency
 Started with a whiteboard and used it as a reference to complete the code.
