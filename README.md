@@ -11,6 +11,7 @@
 5. [Linked List](401-code-challenges/README/Linked-List(merged_List).md) (mergelists)
 6. [Queue with stacks](401-code-challenges/README/queue_with_stacks.md)
 7. [Animal Shelter](401-code-challenges/README/queue_with_stacks.md)
+8. [Multi bracket Validation](401-code-challenges/README/queue_with_stacks.md)
 
 ## 401 lab
 
