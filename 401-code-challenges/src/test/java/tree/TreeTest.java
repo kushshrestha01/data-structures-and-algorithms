@@ -45,11 +45,11 @@ public class TreeTest {
         tree.root.left = new Node(3);
         tree.root.right = new Node(10);
         tree.root.left.left = new Node(1);
-        tree.root.left.right = new Node(6);
+        tree.root.left.right = new Node(15);
         tree.root.right.right = new Node(14);
         ArrayList<Integer> expectedOutput = new ArrayList<Integer>();
         expectedOutput.add(8);expectedOutput.add(3);expectedOutput.add(1);
-        expectedOutput.add(6);expectedOutput.add(10);expectedOutput.add(14);
+        expectedOutput.add(15);expectedOutput.add(10);expectedOutput.add(14);
 
         System.out.println(tree.preOrder(tree.root, new ArrayList<Integer>()));
         assertEquals("checking preorder",

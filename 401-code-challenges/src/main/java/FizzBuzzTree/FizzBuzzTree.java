@@ -3,6 +3,8 @@ package FizzBuzzTree;
 import tree.Node;
 import tree.Tree;
 
+import java.util.ArrayList;
+
 public class FizzBuzzTree {
 
     public FizzBuzzTree(){}
@@ -11,18 +13,25 @@ public class FizzBuzzTree {
         if(tree.root == null){
             return tree;
         }
-        helperIfDivisible(tree.root);
+        preOrder(tree.root);
         return tree;
+    }
+
+    public void preOrder(Node node) {
+        if (node == null) {
+            return;
+        }
+        helperIfDivisible(node);
+        preOrder(node.left);
+        preOrder(node.right);
     }
 
     public void helperIfDivisible(Node node) {
         if((int)node.value % 3 == 0 && (int)node.value % 5 ==0) {
             node.value = "FizzBuzz";
-        }
-        if ((int)node.value % 3 == 0) {
+        } else if ((int)node.value % 3 == 0) {
             node.value = "Fizz";
-        }
-        if ((int)node.value % 5 == 0) {
+        } else if ((int)node.value % 5 == 0) {
             node.value = "Buzz";
         }
     }
