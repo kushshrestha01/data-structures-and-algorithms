@@ -1,15 +1,16 @@
 package tree;
 
-public class BinarySearchTree {
+public class BinarySearchTree{
 
-    Node root;
+    public Node<Integer> root;
 
     BinarySearchTree() {
         root = null;
     }
 
     //    https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
-    public Node helperAdd(Node root, int value) {
+
+    public Node helperAdd(Node<Integer> root, Integer value) {
         if(root == null){
             return new Node(value);
         }
@@ -22,11 +23,11 @@ public class BinarySearchTree {
         return root;
     }
 
-    public void add(int value) {
+    public void add(Integer value) {
         root = helperAdd(root, value);
     }
 
-    public boolean helperContains(Node root, int value) {
+    public boolean helperContains(Node<Integer> root, Integer value) {
         if(root.value == value) {
             return true;
         }
@@ -42,7 +43,7 @@ public class BinarySearchTree {
         return false;
     }
 
-    public boolean contains(int value) {
+    public boolean contains(Integer value) {
         if(helperContains(root, value)){
             return true;
         } else
