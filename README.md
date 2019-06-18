@@ -12,6 +12,7 @@
 6. [Queue with stacks](401-code-challenges/README/queue_with_stacks.md)
 7. [Animal Shelter](401-code-challenges/README/queue_with_stacks.md)
 8. [Multi bracket Validation](401-code-challenges/README/Multi-Bracket-Validation.md)
+9. [FizzBuzzTree](401-code-challenges/README/FizzBuzzTree.md)
 
 ## 401 lab
 
