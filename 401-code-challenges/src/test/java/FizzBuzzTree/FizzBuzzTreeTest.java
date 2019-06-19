@@ -41,6 +41,7 @@ public class FizzBuzzTreeTest {
         assertEquals("testing Buzz node",
                 "Buzz",
                 tree.root.right.value);
+
     }
 
 
