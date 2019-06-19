@@ -2,7 +2,11 @@
 Conduct “FizzBuzz” on a tree while traversing through it.
 
 ## Challenge Description
-A breadthFirst traversal method was created which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach and print every visited node’s value.
+1. A method called fizzBuzzTree which takes a tree as an argument and without utilizing any of the built-in methods available to your language, determine weather or not the value of each node is divisible by 3, 5 or both, and change the value of each of the nodes:
+2. If the value is divisible by 3, replace the value with “Fizz”
+3. If the value is divisible by 5, replace the value with “Buzz”
+4. If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+5. Return the tree with its new values.
 
 ## Approach & Efficiency
 Started with a whiteboard and used it as a reference to complete the code.
