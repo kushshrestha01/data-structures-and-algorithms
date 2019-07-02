@@ -6,7 +6,9 @@ To learn the use of mergeSort method that sorts the given int array
 
 ## Lecture Flow
 Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value. <br/>
-Sorting is important in programming as it makes it  easier and faster to locate items when it is sorted. Insertion sort is the sorting mechanism where the sorted array is built having one item at a time.
+Sorting is important in programming as it makes it  easier and faster to locate items when it is sorted. <br/>
+The time complexity for the worst, average and best is O(nLogn) since it will always divide the array into two and then merge.
+The space complexity is O(n) as we’re creating temporary arrays in every recursive call.
    
 ### Another main point
 If the data are sorted it is easier to analyse duplicate entities. <br/>
@@ -14,7 +16,7 @@ If the data are sorted it is easier to compare two arrays. <br/>
 If the data are sorted it is easier to find any int in that array. <br/>
 
 ## Algorithm
-Merge Sort uses the recurssive method that divides input array in two halves, calls itself for the two halves. and then merges the two sorted halves.
+Merge Sort is divide and conquer method. Merge Sort uses the recurssive method that divides input array in two halves, calls itself for the two halves. and then merges the two sorted halves.
 ![code snippet](../../../assets/mergeSort/codeSnip.png)
 
 ## Pseudocode
