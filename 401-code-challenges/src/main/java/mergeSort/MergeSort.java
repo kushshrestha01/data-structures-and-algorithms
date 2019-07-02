@@ -3,6 +3,9 @@ package mergeSort;
 public class MergeSort {
 
     public int[] mergeSort(int[] arr) {
+        if(arr.length == 0) {
+            throw new NullPointerException();
+        }
         int n = arr.length;
         if(arr.length > 1) {
             int mid = n/2;

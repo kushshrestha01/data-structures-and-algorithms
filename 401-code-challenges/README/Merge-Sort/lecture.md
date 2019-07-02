@@ -1,8 +1,8 @@
-# Insertion Sort Algorithm
-Insertion sort Algorithm to sort the given int array.
+# Merge Sort Algorithm
+Merge sort Algorithm to sort the given int array.
 
 ## Learning Objectives
-To learn the use of insertionSort method that sorts the given int array
+To learn the use of mergeSort method that sorts the given int array
 
 ## Lecture Flow
 Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value. <br/>
@@ -14,20 +14,21 @@ If the data are sorted it is easier to compare two arrays. <br/>
 If the data are sorted it is easier to find any int in that array. <br/>
 
 ## Algorithm
-Describe in detail how the algorithm works. Include small code snippets to possibly support the points
-
-![code snippet](../images/codeSnip.png)
+Merge Sort uses the recurssive method that divides input array in two halves, calls itself for the two halves. and then merges the two sorted halves.
+![code snippet](../../../assets/mergeSort/codeSnip.png)
 
 ## Pseudocode
-![Pseudocode](../images/pseudocode.png) <br/>
+![Pseudocode](../../../assets/mergeSort/pseudocode1.png) <br/>
+![Pseudocode](../../../assets/mergeSort/pseudocode2.png) <br/>
+
 
 ## Readings and References
 ## Watch Video
-[Video](https://www.youtube.com/watch?v=i-SKeOcBwko)
+[Video](https://www.youtube.com/watch?v=TzeBrDU-JaY)
 
 ## Read
-[Article 1](https://www.interviewbit.com/tutorial/insertion-sort-algorithm/)
+[Article 1](https://www.geeksforgeeks.org/merge-sort/)
 
-[Article 2](https://www.geeksforgeeks.org/insertion-sort/)
+[Article 2](https://howtodoinjava.com/algorithm/merge-sort-java-example/)
 
-[Article 3](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Sorting%20Algorithms/sorting.html)
+[Article 3](https://algs4.cs.princeton.edu/22mergesort/)
