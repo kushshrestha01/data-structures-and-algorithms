@@ -16,5 +16,10 @@ public class MergeSortTest {
                 test.mergeSort(arr));
     }
 
-
+    @Test (expected=NullPointerException.class)
+    public void testNull(){
+        MergeSort test = new MergeSort();
+        int[] arr = {};
+        test.mergeSort(arr);
+    }
 }
