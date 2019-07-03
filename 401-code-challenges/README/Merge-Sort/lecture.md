@@ -34,3 +34,6 @@ Merge Sort is divide and conquer method. Merge Sort uses the recurssive method t
 [Article 2](https://howtodoinjava.com/algorithm/merge-sort-java-example/)
 
 [Article 3](https://algs4.cs.princeton.edu/22mergesort/)
+
+##[Code](/Users/kusshres/codefellows/401/data-structures-and-algorithms/401-code-challenges/src/main/java/mergeSort/MergeSort.java)
+##[Code Test](/Users/kusshres/codefellows/401/data-structures-and-algorithms/401-code-challenges/src/test/java/mergeSort/MergeSortTest.java)
