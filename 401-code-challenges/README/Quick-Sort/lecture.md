@@ -16,11 +16,11 @@ If the data are sorted it is easier to find any int in that array. <br/>
 
 ## Algorithm
 Merge Sort is divide and conquer method. Merge Sort uses the recurssive method that divides input array in two halves, calls itself for the two halves. and then merges the two sorted halves.
-![code snippet](../../../assets/mergeSort/codeSnip.png)
+![code snippet](../../../assets/quickSort/codeSnip.png)
 
 ## Pseudocode
-![Pseudocode](../../../assets/mergeSort/pseudocode1.png) <br/>
-![Pseudocode](../../../assets/mergeSort/pseudocode2.png) <br/>
+![Pseudocode](../../../assets/quickSort/pseudocode1.png) <br/>
+![Pseudocode](../../../assets/quickSort/pseudocode2.png) <br/>
 
 
 ## Readings and References

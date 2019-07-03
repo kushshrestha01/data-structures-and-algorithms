@@ -8,6 +8,6 @@ The Lecture notes was written with the given Pseudo Code
 Used the provided Pseudo code to write the code
 
 ## Solution
-![Whiteboard](./../../../assets/mergeSort/merge_sort.jpeg) <br/>
+![Whiteboard](./../../../assets/quickSort/quick_sort.jpeg) <br/>
 
 ## [Lecture](lecture.md)
