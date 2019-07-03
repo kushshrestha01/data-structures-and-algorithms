@@ -32,5 +32,5 @@ Merge Sort is divide and conquer method. Merge Sort uses the recurssive method t
 
 [Article 2](https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/tutorial/)
 
-##[Code](/Users/kusshres/codefellows/401/data-structures-and-algorithms/401-code-challenges/src/main/java/quickSort/QuickSort.java)
-##[Code Test](/Users/kusshres/codefellows/401/data-structures-and-algorithms/401-code-challenges/src/test/java/quickSort/QuickSortTest.java)
+## [Code](../../src/main/java/quickSort/QuickSort.java)
+## [Code Test](../../src/test/java/quickSort/QuickSortTest.java)
