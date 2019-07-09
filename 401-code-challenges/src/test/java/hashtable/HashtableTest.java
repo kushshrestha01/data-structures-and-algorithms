@@ -17,7 +17,7 @@ public class HashtableTest {
         test.add("Amanda", "The Real Boss");
         test.add("Allie", "Kid");
 
-
+        assertTrue("Checking to see if the key exist or not", test.contains("Cathy"));
     }
 
     @Test
