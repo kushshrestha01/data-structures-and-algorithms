@@ -38,7 +38,7 @@ public class Hashtable {
     public void add(String key, String value) {
         int hashkey = hash(key);
 
-        if (this.map[hashkey] == null) {
+        if (map[hashkey] == null) {
             map[hashkey] = new Node(key,value);
         }
         else {

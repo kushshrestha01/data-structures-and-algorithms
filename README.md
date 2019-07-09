@@ -17,6 +17,7 @@
 11. [Find Maximum](401-code-challenges/README/Find-Maximum.md)
 12. [Merge Sort](401-code-challenges/README/Merge-Sort/Merge-Sort.md)
 13. [Quick Sort](401-code-challenges/README/Quick-Sort/Quick-Sort.md)
+14. [Hashtable](401-code-challenges/README/Hashtable.md)
 
 ## 401 lab
 

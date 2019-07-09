@@ -11,7 +11,7 @@ Implement a Hashtable.
 Started with a whiteboard and used it as a reference to complete the code.
 
 ## Solution
-![Whiteboard](../../assets/FizzBuzzTree.jpeg) <br/>
+![Whiteboard](../../assets/hashtable.jpeg) <br/>
 
 ## [Link to the code](../src/main/java/hashtable/Hashtable.java)
 
