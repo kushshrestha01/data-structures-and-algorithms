@@ -18,6 +18,7 @@
 12. [Merge Sort](401-code-challenges/README/Merge-Sort/Merge-Sort.md)
 13. [Quick Sort](401-code-challenges/README/Quick-Sort/Quick-Sort.md)
 14. [Hashtable](401-code-challenges/README/Hashtable.md)
+15. [Repeated Word](401-code-challenges/README/Repeated-Word.md)
 
 ## 401 lab
 
