@@ -9,7 +9,7 @@ Find common values in 2 binary trees.
 Started with a whiteboard and used it as a reference to complete the code.
 
 ## Solution
-![Whiteboard](../../assets/hashtable.jpeg) <br/>
+![Whiteboard](../../assets/tree_intersection.jpeg) <br/>
 
 ## [Link to the code](../src/main/java/TreeIntersection/TreeIntersection.java)
 
