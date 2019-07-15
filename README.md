@@ -29,4 +29,5 @@
 1. [Lab 05: Linked Lists](401-code-challenges/README/Linked-Lists.md)
 2. [Lab 10: Stack and Queue Implementation](401-code-challenges/README/Stack-Queue.md)
 3. [Lab 15: Trees](401-code-challenges/README/Tree.md)
+4. [Lab: Graph](401-code-challenges/README/Graph.md)
 
