@@ -12,6 +12,4 @@ public class Node {
         this.value = value;
         this.edges = new HashSet<>();
     }
-
-
 }
