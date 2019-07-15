@@ -98,8 +98,6 @@ public class GraphTest {
         Graph test = new Graph();
         Node node1 = new Node(5); Node node2 = new Node(6); int weight = 0;
         test.addEdge(node1, node2, weight);
-//        System.out.println(test.getNodes().size());
-//        System.out.println(test.getNeighbors(node1).size());
         assertEquals("checking the size of neighbor is 1",
                 1,
                 test.getNeighbors(node1).size());
