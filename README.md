@@ -20,6 +20,7 @@
 14. [Hashtable](401-code-challenges/README/Hashtable.md)
 15. [Repeated Word](401-code-challenges/README/Repeated-Word.md)
 16. [Tree Intersection](401-code-challenges/README/Tree-Intersection.md)
+17. [Left Join](401-code-challenges/README/LeftJoin.md)
 
 ## 401 lab
 
