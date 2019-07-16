@@ -30,12 +30,9 @@ public class Graph {
 
     public Set<Edge> getNeighbors(Node node) {
         return node.edges;
-
     }
 
     public int size() {
         return this.nodes.size();
     }
-
-
 }

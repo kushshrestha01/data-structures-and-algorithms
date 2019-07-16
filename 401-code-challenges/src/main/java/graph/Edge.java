@@ -2,8 +2,8 @@ package graph;
 
 public class Edge {
 
-    int weight;
-    Node node;
+    public int weight;
+    public Node node;
 
     public Edge(int weight, Node node) {
         this.weight = weight;
