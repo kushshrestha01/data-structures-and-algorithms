@@ -5,8 +5,8 @@ import java.util.Set;
 
 public class Node {
 
-    int value;
-    Set<Edge> edges;
+    public int value;
+    public Set<Edge> edges;
 
     public Node(int value){
         this.value = value;
