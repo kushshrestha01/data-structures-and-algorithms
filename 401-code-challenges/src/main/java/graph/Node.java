@@ -5,10 +5,10 @@ import java.util.Set;
 
 public class Node {
 
-    public int value;
+    public String value;
     public Set<Edge> edges;
 
-    public Node(int value){
+    public Node(String value){
         this.value = value;
         this.edges = new HashSet<>();
     }

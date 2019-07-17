@@ -11,13 +11,17 @@ public class Graph {
         this.nodes = new HashSet<Node>();
     }
 
-    public Node addNode(int value) {
+    public Node addNode(String value) {
         Node node = new Node(value);
         this.nodes.add(node);
         return node;
     }
 
-    public void addEdge(Node node1, Node node2, int weight){
+    public void addNode(Node node){
+        this.nodes.add(node);
+    }
+
+    public void addEdge(Node node1, Node node2, String weight){
         Edge edge = new Edge(weight, node2);
         node1.edges.add(edge);
         Edge edge1 = new Edge(weight,node1);

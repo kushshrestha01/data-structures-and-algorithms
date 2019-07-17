@@ -15,8 +15,8 @@ public class BinarySearchTest {
     public void testBinaryMethod() {
         BinarySearch classUnderTest = new BinarySearch();
         int arr[] = {4, 8, 15, 16, 23, 42};
-        int x = 15;
-        int expectedOutput = 2;
+        int x = 16;
+        int expectedOutput = 3;
         assertEquals("someLibraryMethod should return 'true'", expectedOutput,  classUnderTest.BinarySearch(arr, x));
     }
 
