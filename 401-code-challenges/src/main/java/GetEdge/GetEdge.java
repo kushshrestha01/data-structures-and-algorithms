@@ -68,7 +68,7 @@ public class GetEdge {
 
 
         GetEdge getEdgeTest = new GetEdge();
-        String[] test = {"Pandora", "Metroville"};
+        String[] test = {"Pandora", "Arendelle"};
         System.out.println(getEdgeTest.flightInfo(g, test));
     }
 }
