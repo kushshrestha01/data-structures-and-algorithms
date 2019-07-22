@@ -29,16 +29,16 @@ public class BreadthFirst {
 
     public static void main(String[] ags){
         Graph g = new Graph();
-        Node node1 = new Node(1); Node node2 = new Node(2);
-        Node node3 = new Node(3); Node node4 = new Node(4);
-        Node node5 = new Node(5); Node node6 = new Node(6);
+        Node node1 = new Node("1"); Node node2 = new Node("2");
+        Node node3 = new Node("3"); Node node4 = new Node("4");
+        Node node5 = new Node("5"); Node node6 = new Node("6");
 
-        g.addEdge(node1, node6,2);
-        g.addEdge(node1, node2,2);
-        g.addEdge(node2, node3,2);
-        g.addEdge(node2, node4,2);
-        g.addEdge(node2, node5,2);
-        g.addEdge(node3, node6,2);
+        g.addEdge(node1, node6,"2");
+        g.addEdge(node1, node2,"2");
+        g.addEdge(node2, node3,"2");
+        g.addEdge(node2, node4,"2");
+        g.addEdge(node2, node5,"2");
+        g.addEdge(node3, node6,"2");
 
         BreadthFirst b = new BreadthFirst();
         System.out.println(b.breadthFirstTraversal(node1).get(0).value);

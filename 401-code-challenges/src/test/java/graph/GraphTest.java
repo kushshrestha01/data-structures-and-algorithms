@@ -13,7 +13,7 @@ public class GraphTest {
     @Test
     public void testAddNode(){
         Graph test = new Graph();
-        test.addNode(5);
+        test.addNode("5");
         assertEquals("checking if value is added",
                 1,
                 test.size());
@@ -23,7 +23,7 @@ public class GraphTest {
     @Test
     public void testAddEdge(){
         Graph test = new Graph();
-        Node node1 = new Node(5); Node node2 = new Node(6); int weight = 0;
+        Node node1 = new Node("5"); Node node2 = new Node("6"); String weight = "0";
         test.addEdge(node1, node2, weight);
         assertEquals("checking the size of the edge",
                 1,
@@ -37,8 +37,8 @@ public class GraphTest {
     @Test
     public void testGetNodes() {
         Graph test = new Graph();
-        test.addNode(5);
-        test.addNode(6);
+        test.addNode("5");
+        test.addNode("6");
         assertEquals("checking the size of the graph",
                 2,
                 test.size());
@@ -48,8 +48,8 @@ public class GraphTest {
     @Test
     public void testGetNeighbor(){
         Graph test = new Graph();
-        Node node1 = new Node(5); Node node2 = new Node(6); Node node3 = new Node(7);
-        int weight = 0;
+        Node node1 = new Node("5"); Node node2 = new Node("6"); Node node3 = new Node("7");
+        String weight = "0";
         test.addEdge(node1, node2, weight);
         test.addEdge(node1, node3, weight);
         assertEquals("checking the size of the edge of node1",
@@ -67,15 +67,15 @@ public class GraphTest {
     @Test
     public void testNodesWithWeights() {
         Graph test = new Graph();
-        Node node1 = new Node(5); Node node2 = new Node(6); int weight = 1;
+        Node node1 = new Node("5"); Node node2 = new Node("6"); String weight = "1";
         test.addEdge(node1, node2, weight);
-        int expectedOutput = 1;
-        ArrayList<Integer> actualOutput = new ArrayList<>();
+        String expectedOutput = "1";
+        ArrayList<String> actualOutput = new ArrayList<>();
         for(Edge s: node1.edges) {
             actualOutput.add(s.weight);
 
         }
-        int result = actualOutput.get(0);
+        String result = actualOutput.get(0);
         assertEquals("checking the value of weight",
                 expectedOutput,
                 result);
@@ -85,8 +85,8 @@ public class GraphTest {
     @Test
     public void testSize() {
         Graph test = new Graph();
-        test.addNode(5);
-        test.addNode(132);
+        test.addNode("5");
+        test.addNode("132");
         assertEquals("checking the size of the graph",
                 2,
                 test.size());
@@ -96,7 +96,7 @@ public class GraphTest {
     @Test
     public void testOneNodeOneEdge() {
         Graph test = new Graph();
-        Node node1 = new Node(5); Node node2 = new Node(6); int weight = 0;
+        Node node1 = new Node("5"); Node node2 = new Node("6"); String weight = "0";
         test.addEdge(node1, node2, weight);
         assertEquals("checking the size of neighbor is 1",
                 1,

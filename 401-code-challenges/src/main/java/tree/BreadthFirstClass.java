@@ -9,7 +9,9 @@ public class BreadthFirstClass extends Tree {
     public void breadthFirst(Tree tree){
         Queue<Node> queue = new LinkedList<Node>();
         queue.add(tree.root);
+        int i = 0;
         while(!queue.isEmpty()){
+            i++;
             Node temp = new Node();
             temp = queue.poll();
             System.out.println(temp.value);
